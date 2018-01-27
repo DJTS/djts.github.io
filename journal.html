@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!-- Favicon -->
+<link rel="icon" href="/pics/hdfavicon2018.png">
+<!-- Favicon ends -->
+
+<head>
+  <title>MINDFUL</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="djts.github.io/style/index.css">
+  <link rel="fonts" href="/style/fonts.css">
+</head>
+
+<body> 
+  <ul class="sidenav">
+  <li><a href="/index.html">Home</a></li>
+  <li style="float:right"><a class="active" href="/journal.html">Journal</a></li>
+  <li style="float:right"><a href="/community.html">Community</a></li>
+</ul>
+  
+  <!-- Page Content -->
+  <div class="content">
+     How are you feeling?
+     <br><button class="button" type="button">Angry</button> <button class="button" type="button">Sad</button> <button class="button" type="button">Stressed</button>
+     <button class="button" type="button">Frustrated</button> <button class="button" type="button">Down</button> <button class="button" type="button">Lonely</button>
+     <button class="button" type="button">Anxious</button> <button class="button" type="button">Overwhelmed</button> <button class="button" type="button">Tired</button>
+     <button class="button" type="button">Okay</button> <button class="button" type="button">Calm</button> <button class="button" type="button">Good</button>
+     <button class="button" type="button">Productive</button> <button class="button" type="button">Accomplished</button>
+     <button class="button" type="button">Happy</button> <button class="button" type="button">Excited</button> <button class="button" type="button">Ecstatic</button>
+    
+    <br><br>Summarize your feelings about recovery today:
+     <br><button class="button" type="button">Beaten down</button> <button class="button" type="button">Empty</button> <button class="button" type="button">Overwhelmed</button>
+     <button class="button" type="button">Optimistic</button> <button class="button" type="button">Excited</button> <button class="button" type="button">Looking forward</button>
+    
+    <br><br>What’s on your mind today? Jot down your thoughts in a journal entry. <br>
+    
+  <br> 01/21/2018 Easing into my new anti-cancer diet…it’s all about staying healthy from here on out...
+  <br> I’m back at work! It feels so good to be at the office. I missed working in my office more than I ever thought possible...
+  <br> <br>
+  Journal Entry: <br>
+  
+  <textarea id = "myTextArea"
+                  rows = "15"
+                  cols = "100"
+                  placeholder="Start typing ..."></textarea>
+
+  
+  <br><br>
+<button onclick="myFunction()">Document to Journal</button>
+
+<p id="confirm-button"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Confirm submission?")) {
+        txt = "Submitted!";
+        window.location.href = "submission.html";
+    } else {
+        txt = "Cancelled.";
+    }
+    document.getElementById("confirm-button").innerHTML = txt;
+}
+</script>
+
+</form>
+    
+  </div>
+   
+
+  
+</body>
+
+</html>
