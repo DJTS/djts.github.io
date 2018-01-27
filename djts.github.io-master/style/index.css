@@ -1,0 +1,112 @@
+html {
+    background: #acb6e5;
+    background: -webkit-linear-gradient(to right, #acb6e5, #86fde8);
+    background: linear-gradient(to right, #acb6e5, #86fde8);
+    cursor: url('https://djts.github.io/pics/hdcursor2018.png'), auto;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    margin: 0;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: crosshair;
+    -o-transition:.4s;
+    -ms-transition:.4s;
+    -moz-transition:.4s;
+    -webkit-transition:.4s;
+    transition:.4s;
+}
+ 
+ul.sidenav li a.active {
+    cursor: crosshair;
+    background-color: #f2d2ff;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    cursor: crosshair;
+    background-color: #555;
+    color: white;
+    text-decoration: bold;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    /*height: 1000px;*/
+    margin-top: 10px; 
+    text-align: center;
+}
+
+div.title {
+    padding: 1px 16px;
+    margin-top: 155px; 
+    text-align: center;
+    font-size: 150px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #f2d2ff; /* Green */
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #f2d2ff; /* Green */
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media screen {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #f2d2ff;
+}
+::selection {
+    color: white; 
+    background: #f2d2ff;
+}
+
+main-title {
+    color: black;
+    text-shadow: 1px 1px 2px white, 0 0 25px cyan, 0 0 5px purple;
+}
